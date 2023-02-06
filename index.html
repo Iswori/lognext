@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./log.css"/>
+</head>
+<body>
+
+<div class="msg" id="msg">
+<p>Thank You for submitting</p>
+<button class="ok">OK</button>
+</div>
+
+    
+<div class="main" id="main">
+<div class="first">
+    <h1>Create your account</h1>
+    <div class="fb">
+        <div><img src="./photo/fb.png" class="pic"></div>  <div><a href="">Sign in with facebook</a></div>
+    </div>
+    <div class="twitter">
+        <div><img src="./photo/twitter.png" class="pic"></div>  <div><a href="">Sign in with twitter</a></div>
+    </div>
+    <div class="google">
+        <div><img src="./photo/google.png" class="pic"></div>  <div><a href="">Sign in with google</a></div>
+    </div>
+   <div class="linkedin">
+        <div><img src="./photo/linkedin.png" class="pic"></div>  <div><a href="">Sign in with linkedin</a></div>
+    </div>
+</div>
+
+<div class="second">
+    <h1>LOGIN HERE</h1>
+    <div class="uspa">
+        <h2>Username</h2>
+        <div>
+        <input type="email" placeholder="Enter your email" id="email">
+         <div id="emailerror"></div>
+        </div>
+    </div>
+    <div class="uspa">
+        <h2>Password</h2>
+        <div>
+        <input type="password" placeholder="Enter your password" id="password">
+    </div>
+    </div>
+            <div id="passworderror"></div>
+    <button onclick="Lognext()">Log In</button>
+</div>
+</div>
+    <script src="./log.js"></script>
+</body>
+</html>
