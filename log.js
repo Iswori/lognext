@@ -22,14 +22,32 @@ emailerror.innerHTML='please enter email address'
       error.push('error')
     passworderror.innerHTML="password must be more than 6 words"
    } 
-   let Msg=document.getElementById('main');
-   if(error.length===0){
-Msg.style.display='none'
-   }
-   {
-  let Msg=document.getElementById('msg');
-  if (error.length===0) {
-   Msg.style.transform="translateY(0%)"
-  }
+//    let Msg=document.getElementById('main');
+//    if(error.length===0){
+// Msg.style.display='none'
+//    }
+//    {
+//   let Msg=document.getElementById('msg');
+//   if (error.length===0) {
+//    Msg.style.transform="translateY(0%)"
+//   }
+// }
+let Msg=document.getElementById('msg');
+if (error.length===0) {
+   Msg.style.transform="scale(1.04)"
 }
+
+let progress=document.getElementById('progress');
+if (error.length===0) {
+   // progress.style.height="20px"
+   progress.style.width="300px"
+}
+}
+
+function cancle() {
+   let Msg=document.getElementById('msg');
+   if ( Msg.style.transform="scale(1.04)") {
+      Msg.style.transform="scale(0)"
+      Msg.style.transition="0s"
+   }
 }
